@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="[BOJ_1786]찾기.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1305]광고.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1701]Cubeditor.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15649]N과 M(1).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15650]N과 M(2).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15651]N과 M(3).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15652]N과 M(4).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15654]N과 M(5).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15655]N과 M(6).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15656]N과 M(7).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15657]N과 M(8).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15663]N과 M(9).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15664]N과 M(10).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15665]N과 M(11).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15666]N과 M(12).cpp">
+      <Filter>BrutetForce\NandM</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_17471]게리맨더링.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16916]부분 문자열.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_14425]문자열 집합.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16968]차량 번호판 1.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_14391]종이 조각.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16917]양념 반 후라이드 반.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16922]로마 숫자 만들기.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_9935]문자열 폭발.cpp">
+      <Filter>DataInstuction</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="StringSearching">
+      <UniqueIdentifier>{41f619d3-231b-48db-a7c0-9af68886bc2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BFS">
+      <UniqueIdentifier>{bb918cda-04a3-42ab-8b8a-94570a0f7db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BrutetForce">
+      <UniqueIdentifier>{06fd8675-c6f6-4ede-99b7-bf4a6c7332b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BrutetForce\NandM">
+      <UniqueIdentifier>{5ad56e0b-b778-4f5d-9e90-bc813a959027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BackTracking">
+      <UniqueIdentifier>{be310a11-6f58-4ab6-a017-71a138a346e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataInstuction">
+      <UniqueIdentifier>{b200ede2-cca0-49a9-b183-c35f05602c48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
