@@ -70,6 +70,21 @@
     <ClCompile Include="[BOJ_9935]문자열 폭발.cpp">
       <Filter>DataInstuction</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_4358]생태학.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_5052]전화번호 목록.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_5670]휴대폰 자판.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16924]십자가 찾기.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16936]나3곱2.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

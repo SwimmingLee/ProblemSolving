@@ -28,6 +28,22 @@
 - [N과 M(11)](https://www.acmicpc.net/problem/15665)
 - [N과 M(12)](https://www.acmicpc.net/problem/15666)
 
+
+
+### Two Pointers Algorithms
+
+- [수들의 합2](https://www.acmicpc.net/problem/2003)
+
+- [소수의 연속합](https://www.acmicpc.net/problem/1644)
+
+- [부분합](https://www.acmicpc.net/problem/1806)
+- [소수의 연속합](https://www.acmicpc.net/problem/1644)
+- [부분집합의 합 2](https://www.acmicpc.net/problem/1208)
+- [두 배열의 합](https://www.acmicpc.net/problem/2143)
+- [합이 0인 네 정수](https://www.acmicpc.net/problem/7453)
+
+
+
 ### BruteForce
 
 - [종이조각](https://www.acmicpc.net/problem/14391)  [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/BruteForce/%5BBOJ_14391%5D%EC%A2%85%EC%9D%B4%20%EC%A1%B0%EA%B0%81.cpp) :star: 
@@ -38,14 +54,18 @@
   - 수식을 이용해서 한 번에 최적해를 구할 수 있지 않을 까 했지만, 오산이였다. (반마리를 여러 개 사면 정해진 조건보다 치킨의 양이 초과되지만 가격이 싸지는 경우가 있음) 반마리 치킨의 개수를 완전탐색으로 조절해가며 가장 싼 가격을 구하는 문제이다.
 - [로마 숫자 만들기](https://www.acmicpc.net/problem/16922) :star:
   - 규칙을 파악해서 한 번에 최적해를 구할 수 있을까 했지만, 착각이였다. 이런 문제들은 먼저 탐색 크기를 보고, 가능하다 싶으면 완전 탐색으로 구하도록 하자.
-- [십자가 찾기](https://www.acmicpc.net/problem/16924) 3.1
-- [나3곱2](https://www.acmicpc.net/problem/16936) 3.1
-- [두 스티커](https://www.acmicpc.net/problem/16937) 3.1
+- [십자가 찾기](https://www.acmicpc.net/problem/16924) 
+  - 주어진 그림과 같이 만들 수 있도록 하는 십자가를 구하는 문제이다. 최소한의 십자가를 구하는 것이 아니라 정답이 될 수 있는 십자가를 출력하는 문제이기 때문에 모든 요소에서 사방으로 얼마나 별이 있는지 개수를 세주면 풀 수 있는 문제이다.
+- [나3곱2](https://www.acmicpc.net/problem/16936) :star::star:
+  - 수열의 크기가 100이라서 가능한 모든 순서를 탐색해서 진행한다면 최악의 경우 O(N!)이기 때문에 터질 수 밖에 없습니다. 이 문제는 약간의 아이디어로 O(NlogN)만에 풀 수 있습니다. 나누기3이라는 요소 때문에 수열 속의 약수가 3의 배수가 높은 순서대로 나올 수 밖에 없습니다. 즉, 3^n, 3^(n-1), 3^(n-2)식으로 나올 수 밖에 없습니다. 마찬가지로 각 2의 배수는 증가하는 쪽으로 밖에 수열이 이뤄질 수가 있습니다. 이러한 특징을 이용해서 정렬한다면 O(NlogN)만에 풀 수 있는 문제입니다. 
+- [두 스티커](https://www.acmicpc.net/problem/16937) :star:
+  - 여러 개의 스터커 중에서 임의의 두 개의 스티커를 붙였을 때 붙인 부분의 넓이가 가장 큰 것을 구하는 문제입니다. 두 개의 스티커를 가능한 넓게 붙이기 위해서는 첫 번째 스티커를 왼쪽위에 붙이고 다른 스티커는 첫 번째 스티커와 인접하는 오른쪽 위 또는 왼쪽 아래에다가 붙여야 합니다. 따라서 상수시간만에 스티커를 부착시킬 수 있는지 확인할 수 있습니다. N이 최대 100이기 때문에 스티커를 선별하는 경우의 수는 100C2로 충분히 제한 시간 내에 풀 수 있습니다. 
 - [캠프 준비](https://www.acmicpc.net/problem/16938)
+  - 각 문제를 고르느냐, 고르지 않느냐를 선별하는 문제로 바꿔 생각할 수 있습니다. N이 최대 15이므로 최대 경우의 수는 2^15, 충분히 제한 시간 내에 풀 수 있습니다.
 - [숫자 재배치](https://www.acmicpc.net/problem/16943)
-- [괄호 추가하기](https://www.acmicpc.net/problem/16637)
+- [괄호 추가하기](https://www.acmicpc.net/problem/16637) 
 - [감시](https://www.acmicpc.net/problem/15683)
-- [등차수열 변환](https://www.acmicpc.net/problem/17088)
+- [등차수열 변환](https://www.acmicpc.net/problem/17088) :star::star:
 - [치킨 배달](https://www.acmicpc.net/problem/15686)
 - [숫자판 점프](https://www.acmicpc.net/problem/2210)
 - [테트리스](https://www.acmicpc.net/problem/3019)
@@ -73,7 +93,11 @@
 - [배열 B의 값](https://www.acmicpc.net/problem/16971)
 
 
-## DFS
+
+## Graph
+
+### DFS 
+
 - [가르침](https://www.acmicpc.net/problem/1062) :star: :star: #다시 풀 것!
   
   - 제한된 알파벳을 학습시켜 최대한의 단어를 이해시키는 문제이다.  학습시킨 알파벳만으로 단어를 이해할 수 있는지 확인할 때 **비트마스크**를 사용하면 O(1)만에 확인할 수 있다.
@@ -89,12 +113,11 @@
     
 
 
-## BFS
+### BFS
 
 - [개리먼더링](https://www.acmicpc.net/problem/17471) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/BFS/%5BBOJ_17471%5D%EA%B2%8C%EB%A6%AC%EB%A7%A8%EB%8D%94%EB%A7%81.cpp) :star:
   
   - 모든 지역을 두 개의 선거구으로 구분할 때, 인원의 차이가 최소가 되도록 하는 문제이다.  각 지역은 선거구A또는 선거구B 상태를 가짐으로 **비트마스크**를 사용하여 **완전탐색**할 수 있다. 
-
 - [늑대와 양](https://www.acmicpc.net/problem/16956)
 - [스타트링크](https://www.acmicpc.net/problem/5014)
 - [탈옥](https://www.acmicpc.net/problem/9376) :star::star::star:
@@ -109,33 +132,47 @@
 - [연구소 2](https://www.acmicpc.net/problem/17141)
 - [연구소 3](https://www.acmicpc.net/problem/17142)
 
+
+
+
+
 ## Data Instruction
 
 ### Stack
 
-- [문자열 폭발]()  [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/DataInstuction/%5BBOJ_9935%5D%EB%AC%B8%EC%9E%90%EC%97%B4%20%ED%8F%AD%EB%B0%9C.cpp) :star:
-  - 두 개의 스택을 이용하여 문자열이 폭발할 때 해당 글자를 제거해주면 되는 문제이다.
-- [히스토그램에서 가장 큰 직사각형]() 
+- [문자열 폭발](https://www.acmicpc.net/problem/9935)  [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/DataInstuction/%5BBOJ_9935%5D%EB%AC%B8%EC%9E%90%EC%97%B4%20%ED%8F%AD%EB%B0%9C.cpp) :star:
+  - 두 개의 스택을 이용하여 문자열이 폭발할 때 해당 글자를 제거해주면 되는 문제이다. 
+- [히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549) :star::star::star:
+  - 분할정복을 이용하면 O(NlogN)만에 풀 수 있지만, 스위핑 알고리즘과 스택을 이용하면 O(N)만에 풀 수 있는 문제입니다. 스위핑 알고리즘은 어떤 선이나 공간을 한쪽에서부터 싹 쓸어버린는 형태를 가집니다. 그래서 한 번만 전체 공간을 스캔하면서 마주치는 요서들에 대해 뭔가를 해주면 정답을 구할 수 있는 문제입니다. 개념적으로는 간단하다고 느끼기 쉽지만, 아이디어를 생각해기 굉장히 어렵습니다. 기본적으로 다른 기법이나 자료구조와 얽히기 때문에 더욱 까다록게 느껴집니다.
+- [오아시스 재결합](https://www.acmicpc.net/problem/3015) :star::star::star:
 
 ### Queue
 
 ### Union-Find
 
-- [집합의 표현]() 
+- [집합의 표현](https://www.acmicpc.net/problem/1717) :star:
+  - 두 요소가 서로 같은 집합에 있는지 물어보는 문제이다. 유니온-파인드를 쓰서 집합을 연결해주고 부모노드를 찾는다면 제한 시간 내에서 빠르게 풀 수 있는 문제이다.
 - [바이러스](https://www.acmicpc.net/problem/2606)
+  - DFS/BFS로도 풀 수 있고, 유니온-파인드로도 풀 수 있는 문제이다. 
 - [여행가자](https://www.acmicpc.net/problem/1976)
+  - 동혁이의 계획대로 여행이 가능한지 아닌지를 판별하는 문제입니다. 길이 연결되어있다면 어떻게든 여행을 할 수 있으므로, 여행계획 도시들이 모두 연결되어있는 집합안에 있는지 판별하면 풀 수 있는 문제입니다.
 - [친구비](https://www.acmicpc.net/problem/16562)
+  - 서로 친한 친구들끼리 그룹을 만들고, 친구 그룹들을 순회하면서 풀 수 있는 문제입니다. 서로 친한 친구끼리 그룹을 만들때, 친구비가 싼 친구가 (유니온-파인드에서)부모 노드가 되도록 합니다. 
 - [친구 네트워크](https://www.acmicpc.net/problem/4195)
+  - 유니온-파인드만으로도 제한 시간 내에 풀 수 있지만, 해시까지 사용하면 더 빠르게 풀 수 있는 문제입니다.
 - [방 청소](https://www.acmicpc.net/problem/9938)
-- [공항](https://www.acmicpc.net/problem/10775)
+- [공항](https://www.acmicpc.net/problem/10775) :star::star::star:
+  - 처음에는 이걸 어떻게 유니온-파인드로 풀어? 생각을 하지만, 풀이법을 알고나니 정말 유니온-파인드를 사용하기에 최적의 문제이다. 
 - [통신망 분할](https://www.acmicpc.net/problem/17398)
+  - 제거가 이루어지는 순서를 거꾸로 이용하면 집합을 묶으면서 풀 수 있는 문제이다. 
 - [네트워크 연결](https://www.acmicpc.net/problem/3780)
+  - 아주아주 좋은 문제이다. 경로압축의 진수를 보여주는 문제!!
 
 ### Heap
 
-- [최대 힙]() 
-- [최소 힙]() 
-- [가운데를 말해요](https://www.acmicpc.net/problem/1655)
+- [최대 힙]() :star:
+- [최소 힙]() :star:
+- [가운데를 말해요](https://www.acmicpc.net/problem/1655) :star::star::star:
 
 ### BST
 
@@ -152,12 +189,18 @@
 ### KMP
 
 - [찾기](https://www.acmicpc.net/problem/1786) ​[[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_1786%5D%EC%B0%BE%EA%B8%B0.cpp) :star:
+  
   - 해당 문자열에서 임의의 패턴이 어느 위치에서 존재하는지 확인하는 문제이다. S문자열에서 P패턴을 찾는 문제임으로 KMP를 사용하면 빠르게 구할 수 있다. 전형적인 KMP 연습문제이다.
-
 - [광고](https://www.acmicpc.net/problem/1305) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_1305%5D%EA%B4%91%EA%B3%A0.cpp) :star::star: ​
+  
   - KMP를 어떻게 적용해야 하나 고민이 되었던 문제이다. 전광판 특징에 따라 문자열이 다시 반복되면 prefix와 suffix가 같아지게 된다. 이 특징을 이용하여 KMP를 적용하면 풀 수 있는 문제이다.
 - [Cubeditor](https://www.acmicpc.net/problem/1701) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_1701%5DCubeditor.cpp) :star::star::star:
+  
   - KMP를 사용하지 않았더라면 풀기 막막한 문제이다. 주어진 문자열에서 prefix와 sufix가  같은 것이 있는지 찾아야 한다. 그리고 
+- [카멜레온 부분 문자열](https://www.acmicpc.net/problem/13506)
+- [Prefix와 Suffix](https://www.acmicpc.net/problem/13576)
+
+  
 
 ### Trie
 
@@ -170,6 +213,9 @@
 - [전화번호 목록](https://www.acmicpc.net/problem/5052)
 - [휴대폰 자판](https://www.acmicpc.net/problem/5670)
 - [생태학](https://www.acmicpc.net/problem/4358)
+- [순환 순열](https://www.acmicpc.net/problem/12104)
+- [부분 수열 XOR](https://www.acmicpc.net/problem/13445) :star:
+- [부분 수열 XOR](https://www.acmicpc.net/problem/13445) :star:
 
 ### Aho-Corasick
 
@@ -321,16 +367,16 @@
 
   - [LCD Test](https://www.acmicpc.net/problem/2290) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/Simulation/%5BBOJ_2290%5DLCD%20Test.cpp)
     
-  - LCD에 출력되는 숫자의 규칙을 파악하면 풀 수 있는 문제이다.
-  
+      - LCD에 출력되는 숫자의 규칙을 파악하면 풀 수 있는 문제이다.
+    
   - [잃어버린 괄호](https://www.acmicpc.net/problem/1541) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/Simulation/%5BBOJ_1541%5D%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0%20%EA%B4%84%ED%98%B8.cpp)
   
     - 주어진 연산 문자열에 괄호를 추가하여 최솟값을 추출하는 문제이다. 연산부호가 +,-밖에 없으므로 탐욕법을 통해 풀 수 있다.
   
   - [시험감독](https://www.acmicpc.net/problem/13458) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/Simulation/%5BBOJ_13458%5D%EC%8B%9C%ED%97%98%EA%B0%90%EB%8F%85.cpp)
-    
-  - 각 반마다 돌아다니면서 필요한 최소 감독관을 구하는 문제이다. 
-  
+
+      - 각 반마다 돌아다니면서 필요한 최소 감독관을 구하는 문제이다. 
+
   - [팀나누기](https://www.acmicpc.net/problem/13866) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/Simulation/%5BBOJ_13866%5D%ED%8C%80%EB%82%98%EB%88%84%EA%B8%B0.cpp)
   
     - 4명이 둘둘 팀을 나누는 데 능력치를 가능하면 골고루 분배하도록 하는 문제이다. 
