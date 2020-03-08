@@ -85,6 +85,69 @@
     <ClCompile Include="[BOJ_16936]나3곱2.cpp">
       <Filter>BrutetForce</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_16937]두 스티커.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16938]캠프 준비.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_6549]히스토그램에서 가장 큰 직사각형.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_3015]오아시스 재결합.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_3780]네트워크 연결.cpp">
+      <Filter>DataInstuction</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_11279]최대 힙.cpp">
+      <Filter>DataInstuction</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1927]최소 힙.cpp">
+      <Filter>DataInstuction</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1655]가운데를 말해요.cpp">
+      <Filter>DataInstuction</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_7785]회사에 있는 사람.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1764]듣보잡%28이진탐색%29.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1764]듣보잡%28해시%29.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1764]듣보잡%28set%29.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1764]듣보잡%28map%29.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1764]듣보잡%28투포인터%29.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_2960]에라토스테네스의 체.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_9250]문자열 집합 판별.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_10256]돌연변이.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_14426]접두사 찾기.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_13505]두 수 XOR.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_12104]순환 순열.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="에라토스테네스의 체.cpp">
+      <Filter>ReferenceCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -104,6 +167,12 @@
     </Filter>
     <Filter Include="DataInstuction">
       <UniqueIdentifier>{b200ede2-cca0-49a9-b183-c35f05602c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{98671371-7869-42f9-8982-db879dbc1167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReferenceCode">
+      <UniqueIdentifier>{b2d39777-5219-4f9d-97b3-eedb41efabb9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

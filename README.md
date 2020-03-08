@@ -142,11 +142,18 @@
 
 - [문자열 폭발](https://www.acmicpc.net/problem/9935)  [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/DataInstuction/%5BBOJ_9935%5D%EB%AC%B8%EC%9E%90%EC%97%B4%20%ED%8F%AD%EB%B0%9C.cpp) :star:
   - 두 개의 스택을 이용하여 문자열이 폭발할 때 해당 글자를 제거해주면 되는 문제이다. 
+- [오큰수](https://www.acmicpc.net/problem/17298)
+- [오등큰수](https://www.acmicpc.net/problem/17299)
 - [히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549) :star::star::star:
-  - 분할정복을 이용하면 O(NlogN)만에 풀 수 있지만, 스위핑 알고리즘과 스택을 이용하면 O(N)만에 풀 수 있는 문제입니다. 스위핑 알고리즘은 어떤 선이나 공간을 한쪽에서부터 싹 쓸어버린는 형태를 가집니다. 그래서 한 번만 전체 공간을 스캔하면서 마주치는 요서들에 대해 뭔가를 해주면 정답을 구할 수 있는 문제입니다. 개념적으로는 간단하다고 느끼기 쉽지만, 아이디어를 생각해기 굉장히 어렵습니다. 기본적으로 다른 기법이나 자료구조와 얽히기 때문에 더욱 까다록게 느껴집니다.
+  - 분할정복을 이용하면 O(NlogN)만에 풀 수 있지만, 스위핑 알고리즘과 스택을 이용하면 O(N)만에 풀 수 있는 문제입니다. **스위핑 알고리즘**은 어떤 선이나 공간을 한쪽에서부터 싹 쓸어버린는 형태를 가집니다. 그래서 한 번만 전체 공간을 스캔하면서 마주치는 요서들에 대해 뭔가를 해주면 정답을 구할 수 있는 문제입니다. 개념적으로는 간단하다고 느끼기 쉽지만, 아이디어를 생각해기 굉장히 어렵습니다. 기본적으로 다른 기법이나 자료구조와 얽히기 때문에 더욱 까다록게 느껴집니다. **스택 마지막 처리** 유심히 살펴봐야 합니다.
 - [오아시스 재결합](https://www.acmicpc.net/problem/3015) :star::star::star:
+  - 완전탐색하려면 O(N^2)이 걸린다. 이런 문제는 바로 **스위핑 알고리즘**을 적용하려고 하지 말고 먼저 완전 탐색으로 풀라고 해보자. 완전 탐색으로 해서 풀리지 않는다는 것을 알고 있지만, 이렇게 해야 논리가 명확해 질 수 있다.  
+
+
 
 ### Queue
+
+
 
 ### Union-Find
 
@@ -159,32 +166,46 @@
 - [친구비](https://www.acmicpc.net/problem/16562)
   - 서로 친한 친구들끼리 그룹을 만들고, 친구 그룹들을 순회하면서 풀 수 있는 문제입니다. 서로 친한 친구끼리 그룹을 만들때, 친구비가 싼 친구가 (유니온-파인드에서)부모 노드가 되도록 합니다. 
 - [친구 네트워크](https://www.acmicpc.net/problem/4195)
-  - 유니온-파인드만으로도 제한 시간 내에 풀 수 있지만, 해시까지 사용하면 더 빠르게 풀 수 있는 문제입니다.
-- [방 청소](https://www.acmicpc.net/problem/9938)
+  - 유니온-파인드만으로도 제한 시간 내에 풀 수 있지만, **해시**까지 사용하면 더 빠르게 풀 수 있는 문제입니다.
+- [방 청소](https://www.acmicpc.net/problem/9938) :star::star::star:
 - [공항](https://www.acmicpc.net/problem/10775) :star::star::star:
   - 처음에는 이걸 어떻게 유니온-파인드로 풀어? 생각을 하지만, 풀이법을 알고나니 정말 유니온-파인드를 사용하기에 최적의 문제이다. 
-- [통신망 분할](https://www.acmicpc.net/problem/17398)
+- [통신망 분할](https://www.acmicpc.net/problem/17398) :star:
   - 제거가 이루어지는 순서를 거꾸로 이용하면 집합을 묶으면서 풀 수 있는 문제이다. 
-- [네트워크 연결](https://www.acmicpc.net/problem/3780)
-  - 아주아주 좋은 문제이다. 경로압축의 진수를 보여주는 문제!!
+- [네트워크 연결](https://www.acmicpc.net/problem/3780) :star::star:
+  - **경로압축**의 진수를 보여주는 문제입니다. 네트워크 연결이 진행될 수록 간선이 어떻게 추가되고 이 간선 사이의 거리를 어떻게 압축할 수 있는지를 그려야 되는 문제입니다.
+
+
 
 ### Heap
 
-- [최대 힙]() :star:
-- [최소 힙]() :star:
+- [최대 힙](https://www.acmicpc.net/problem/11279) :star:
+  - 힙을 구현할 수 있나 묻는 문제입니다.
+- [최소 힙](https://www.acmicpc.net/problem/1927) :star:
+  - 힙을 구현할 수 있나 묻는 문제입니다.
 - [가운데를 말해요](https://www.acmicpc.net/problem/1655) :star::star::star:
+  - 최소 힙과 최대 힙을 사용하여 가운데 값을 추출하는 문제입니다. 이런건 **레퍼런스 문제**로 잘 알아두어야 합니다.
+
+
 
 ### BST
 
 - [듣보잡](https://www.acmicpc.net/problem/1764)
+  - 풀이 방법으로 트라이, STL map, STL set, STL unordered_map, 투 포인터 모두 가능합니다.
 - [회사에 있는 사람](https://www.acmicpc.net/problem/7785)
+  - 회사에 남아있는 사람을 구하는 문제입니다. 회사에 남아있는 사람의 이름이 문자열을 역 사전순으로 출력해야 하기 때문에,  set을 이용하면 좋은 문제입니다. set은 BST특성상 in-order순회 시 사전순으로, 마찬가지로 pre-order시에는 역 사전순으로 출력되기 때문입니다.
+
+
 
 ## String Searching Algorithm
 
 ### Rabin-Carp Algorithm
 
 - [부분 문자열](https://www.acmicpc.net/problem/16916) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_16916%5D%EB%B6%80%EB%B6%84%20%EB%AC%B8%EC%9E%90%EC%97%B4.cpp)
+  
   - 라빈카프 알고리즘을 사용하여 부분 문자열을 찾을 수 있다. 진법(base)과 소수 선별에 따라서 해쉬 충돌 횟수가 달라지므로, 적절한 진법과 소수를 선별해야 한다.
+  
+- [순환 순열](https://www.acmicpc.net/problem/12104) :star:
 
 ### KMP
 
@@ -204,25 +225,29 @@
 
 ### Trie
 
-- [듣보잡](https://www.acmicpc.net/problem/1764) 
-- [접두사 찾기](https://www.acmicpc.net/problem/14426) 3.1
+- [접두사 찾기](https://www.acmicpc.net/problem/14426)
   - 전형적인 Trie문제이다. S문자열 집합에서 M문자열이 접두사로 나타나지는지 확인하는 문제이다.
-- [두 수 XOR](https://www.acmicpc.net/problem/13505) :star::star::star:3.1
+- [두 수 XOR](https://www.acmicpc.net/problem/13505) :star::star::star:
+  - 입력된 숫자를 32길이의 문자열로 생각해서 트라이에 넣어서 풀 수 있는 문제입니다. (주어진 입력은 int형 범위 안이다.)  집한 안의 숫자와 xor했을 때 가장 큰 숫자를 구해기 위해서는 비트가 1일때 0을, 0일때 1을 찾도록 해야 합니다. 
 - [문자열 집합](https://www.acmicpc.net/problem/14425) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_14425%5D%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%A7%91%ED%95%A9.cpp)
-  - S문자열 집합에 M문자열 집합이 몇 개나 포함되나 확인하는 문제이다. 문제 이름만 다르지 듣보잡이랑 같은 문제이다. Trie를 써서 S문자열 집합에서 M문자열 집합의 문자열들이 존재하는지 확인하면 된다. # trie보다 unordered_map를 사용하는 것이 더 빠르다.. 왜??
+  - S문자열 집합에 M문자열 집합이 몇 개나 포함되나 확인하는 문제이다. 문제 이름만 다르지 듣보잡이랑 같은 문제이다. Trie를 써서 S문자열 집합에서 M문자열 집합의 문자열들이 존재하는지 확인하면 된다. 
 - [전화번호 목록](https://www.acmicpc.net/problem/5052)
-- [휴대폰 자판](https://www.acmicpc.net/problem/5670)
-- [생태학](https://www.acmicpc.net/problem/4358)
-- [순환 순열](https://www.acmicpc.net/problem/12104)
+  - 한 번호가 다른 번호들의 접두어인지 아닌지를 판별하는 문제입니다. 접두사 판별은 역시 트라이죠
+- [휴대폰 자판](https://www.acmicpc.net/problem/5670) :star::star:
+  - 트라이 노드에서 자식이 두 개 이상 있으면 타이핑을 할 수 밖에 없다는 점을 이용해서 풀어야 합니다. 어느 문자열이 다른 문자열의 접두사가 되는 경우에도 타이핑을 한 번 더 쳐야 합니다. 재귀 호출을 통해 전체 트라이를 탐색하는 방식으로 해결할 수 있습니다. 어차피 트라이도 트리구조이기 때문입니다.
+- [생태학](https://www.acmicpc.net/problem/4358) :star:
+  - 트라이 속성을 이용해서 주어진 문자열을 사전순으로 나열하면 되는 문제입니다.
 - [부분 수열 XOR](https://www.acmicpc.net/problem/13445) :star:
 - [부분 수열 XOR](https://www.acmicpc.net/problem/13445) :star:
+
+
 
 ### Aho-Corasick
 
-- [문자열 집합 판별](https://www.acmicpc.net/problem/9250)
-- [돌연변이](https://www.acmicpc.net/problem/10256)
-
-
+- [문자열 집합 판별](https://www.acmicpc.net/problem/9250) :star::star:
+  - 아호코라식을 적용해보는 문제입니다.
+- [돌연변이](https://www.acmicpc.net/problem/10256) :star::star::star:
+  - 아호코라식을 적용해보는 문제입니다. 문자열 마커를 세 등분하여 가운데만 뒤집는 것을 구현해야 됩니다.
 
 
 ## Dynamic Programming
