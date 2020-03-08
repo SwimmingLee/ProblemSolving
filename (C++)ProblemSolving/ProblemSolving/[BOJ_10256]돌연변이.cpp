@@ -40,6 +40,7 @@ void add(int node, string& str, int index) {
 	if (trie[node].children[c] == -1) {
 		int next = init(); 
 		trie[node].children[c] = next;
+		//trie[node].children[c] = init();
 	}
 	add(trie[node].children[c], str, index + 1);
 }

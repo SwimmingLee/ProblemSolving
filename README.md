@@ -192,8 +192,8 @@
 
 - [듣보잡](https://www.acmicpc.net/problem/1764)
   - 풀이 방법으로 트라이, STL map, STL set, STL unordered_map, 투 포인터 모두 가능합니다.
-- [회사에 있는 사람](https://www.acmicpc.net/problem/7785)
-  - 회사에 남아있는 사람을 구하는 문제입니다. 회사에 남아있는 사람의 이름이 문자열을 역 사전순으로 출력해야 하기 때문에,  set을 이용하면 좋은 문제입니다. set은 BST특성상 in-order순회 시 사전순으로, 마찬가지로 pre-order시에는 역 사전순으로 출력되기 때문입니다.
+- [회사에 있는 사람](https://www.acmicpc.net/problem/7785) :star:
+  - 회사에 남아있는 사람을 구하는 문제입니다. 회사에 남아있는 사람의 이름이 문자열을 역 사전순으로 출력해야 하기 때문에,  set을 이용하면 좋은 문제입니다. set은 BST특성상 in-order순회 시 사전순으로, 마찬가지로 pre-order시에는 역 사전순으로 출력되기 때문입니다. (trie로도 풀 수 좋을듯!)
 
 
 
@@ -204,23 +204,35 @@
 - [부분 문자열](https://www.acmicpc.net/problem/16916) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_16916%5D%EB%B6%80%EB%B6%84%20%EB%AC%B8%EC%9E%90%EC%97%B4.cpp)
   
   - 라빈카프 알고리즘을 사용하여 부분 문자열을 찾을 수 있다. 진법(base)과 소수 선별에 따라서 해쉬 충돌 횟수가 달라지므로, 적절한 진법과 소수를 선별해야 한다.
-  
-- [순환 순열](https://www.acmicpc.net/problem/12104) :star:
+
+
 
 ### KMP
 
 - [찾기](https://www.acmicpc.net/problem/1786) ​[[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_1786%5D%EC%B0%BE%EA%B8%B0.cpp) :star:
   
   - 해당 문자열에서 임의의 패턴이 어느 위치에서 존재하는지 확인하는 문제이다. S문자열에서 P패턴을 찾는 문제임으로 KMP를 사용하면 빠르게 구할 수 있다. 전형적인 KMP 연습문제이다.
+  
 - [광고](https://www.acmicpc.net/problem/1305) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_1305%5D%EA%B4%91%EA%B3%A0.cpp) :star::star: ​
   
   - KMP를 어떻게 적용해야 하나 고민이 되었던 문제이다. 전광판 특징에 따라 문자열이 다시 반복되면 prefix와 suffix가 같아지게 된다. 이 특징을 이용하여 KMP를 적용하면 풀 수 있는 문제이다.
+  
 - [Cubeditor](https://www.acmicpc.net/problem/1701) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/StringSearching/%5BBOJ_1701%5DCubeditor.cpp) :star::star::star:
   
-  - KMP를 사용하지 않았더라면 풀기 막막한 문제이다. 주어진 문자열에서 prefix와 sufix가  같은 것이 있는지 찾아야 한다. 그리고 
-- [카멜레온 부분 문자열](https://www.acmicpc.net/problem/13506)
-- [Prefix와 Suffix](https://www.acmicpc.net/problem/13576)
+  - KMP를 사용하지 않았더라면 풀기 막막한 문제이다. 주어진 문자열에서 prefix와 sufix가  같은 것이 있는지 찾아야 한다. 
+  
+- [순환 순열](https://www.acmicpc.net/problem/12104) :star:
 
+  - 라빈카프를 써서 풀 수 있는 줄 알았는데, 해시 충돌이 날때는 문자열이 같나 검사해줘야 하기 때문에 시간초과가 납니다.  순환 순열의 특징을 잘 생각해서 KMP를 사용하면 풀 수 있는 문제입니다.
+
+- [카멜레온 부분 문자열](https://www.acmicpc.net/problem/13506) :star:
+
+  - prefix와 suffix와 같으면서 부분 문자열이 있는지 확인하는 문제입니다. prefix, suffix가 같은것이 있는지 확인하는 kmp의 fail이 의미하는 바를 활용하면 풀 수 있는 문제입니다.
+
+- [Prefix와 Suffix](https://www.acmicpc.net/problem/13576) :star::star::star:
+
+  - 모르겠다... 백준선생님께 여쭤보자
+  
   
 
 ### Trie
@@ -237,10 +249,12 @@
   - 트라이 노드에서 자식이 두 개 이상 있으면 타이핑을 할 수 밖에 없다는 점을 이용해서 풀어야 합니다. 어느 문자열이 다른 문자열의 접두사가 되는 경우에도 타이핑을 한 번 더 쳐야 합니다. 재귀 호출을 통해 전체 트라이를 탐색하는 방식으로 해결할 수 있습니다. 어차피 트라이도 트리구조이기 때문입니다.
 - [생태학](https://www.acmicpc.net/problem/4358) :star:
   - 트라이 속성을 이용해서 주어진 문자열을 사전순으로 나열하면 되는 문제입니다.
-- [부분 수열 XOR](https://www.acmicpc.net/problem/13445) :star:
-- [부분 수열 XOR](https://www.acmicpc.net/problem/13445) :star:
+- [Boggle](https://www.acmicpc.net/problem/9202) :star:
+- [부분 수열 XOR](https://www.acmicpc.net/problem/13445) :star::star::star:
+- [XOR 합](https://www.acmicpc.net/problem/13504) :star::star::star:
+  - 같은 숫자를 XOR하면 0이 된다는 특징을 이용하여 푸는 문제입니다. 넘나 참신...
 
-
+###  
 
 ### Aho-Corasick
 
@@ -248,6 +262,8 @@
   - 아호코라식을 적용해보는 문제입니다.
 - [돌연변이](https://www.acmicpc.net/problem/10256) :star::star::star:
   - 아호코라식을 적용해보는 문제입니다. 문자열 마커를 세 등분하여 가운데만 뒤집는 것을 구현해야 됩니다.
+- [아스키 거리](https://www.acmicpc.net/problem/2809)
+  - trie에서 자식노드 탐색을 맵으로 하다니;;;
 
 
 ## Dynamic Programming
@@ -329,8 +345,7 @@
 - [K번째 수](https://www.acmicpc.net/problem/1300)
 
 - [놀이 공원](https://www.acmicpc.net/problem/1561)
-
-  
+- [메탈](https://www.acmicpc.net/problem/9460) :star::star:
 
 ## Math
 

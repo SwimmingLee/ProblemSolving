@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-#define MAX_PRIME	3000000000
-#define START		2999999000
+#define MAX_PRIME	30000000
+#define START		29999990
 #define END			MAX_PRIME
 unsigned int prime[MAX_PRIME / 32 + 1];
 

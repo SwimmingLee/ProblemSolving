@@ -148,6 +148,12 @@
     <ClCompile Include="에라토스테네스의 체.cpp">
       <Filter>ReferenceCode</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_13506]카멜레온 부분 문자열.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_13576]Prefix와 Suff4ix.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
