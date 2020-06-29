@@ -62,6 +62,8 @@
   - 여러 개의 스터커 중에서 임의의 두 개의 스티커를 붙였을 때 붙인 부분의 넓이가 가장 큰 것을 구하는 문제입니다. 두 개의 스티커를 가능한 넓게 붙이기 위해서는 첫 번째 스티커를 왼쪽위에 붙이고 다른 스티커는 첫 번째 스티커와 인접하는 오른쪽 위 또는 왼쪽 아래에다가 붙여야 합니다. 따라서 상수시간만에 스티커를 부착시킬 수 있는지 확인할 수 있습니다. N이 최대 100이기 때문에 스티커를 선별하는 경우의 수는 100C2로 충분히 제한 시간 내에 풀 수 있습니다. 
 - [캠프 준비](https://www.acmicpc.net/problem/16938)
   - 각 문제를 고르느냐, 고르지 않느냐를 선별하는 문제로 바꿔 생각할 수 있습니다. N이 최대 15이므로 최대 경우의 수는 2^15, 충분히 제한 시간 내에 풀 수 있습니다.
+- [치킨 배달]()(https://www.acmicpc.net/problem/15686)
+  - 조합을 이용해서 풀 수 있는 문제입니다. 조합을 하면서 앞으로 가능한 것의 갯수와 앞으로 선택해야 되는 것의 갯수를 비교해서 중간에 가지를 쳐내도 백준 알고리즘 사이트상에서 실행시간은 동일하게 4ms네요.조합을 이용해서 풀 수 있는 문제이기 때문에 앞으로는 더 빨리 풀 수 있도록 노력해야 겠습니다.
 - [숫자 재배치](https://www.acmicpc.net/problem/16943)
 - [괄호 추가하기](https://www.acmicpc.net/problem/16637) 
 - [감시](https://www.acmicpc.net/problem/15683)
@@ -118,6 +120,8 @@
 - [개리먼더링](https://www.acmicpc.net/problem/17471) [[cpp]](https://github.com/SwimmingLee/Algorithm/blob/master/BFS/%5BBOJ_17471%5D%EA%B2%8C%EB%A6%AC%EB%A7%A8%EB%8D%94%EB%A7%81.cpp) :star:
   
   - 모든 지역을 두 개의 선거구으로 구분할 때, 인원의 차이가 최소가 되도록 하는 문제이다.  각 지역은 선거구A또는 선거구B 상태를 가짐으로 **비트마스크**를 사용하여 **완전탐색**할 수 있다. 
+- [욕심쟁이 판다](https://www.acmicpc.net/problem/1937)
+  - BFS와 DP를 같이 써야지만 풀 수 있는 문제. 종만북에 나와있는 DP 모양을 그대로 사용해서 해결할 수 있다.
 - [늑대와 양](https://www.acmicpc.net/problem/16956)
 - [스타트링크](https://www.acmicpc.net/problem/5014)
 - [탈옥](https://www.acmicpc.net/problem/9376) :star::star::star:

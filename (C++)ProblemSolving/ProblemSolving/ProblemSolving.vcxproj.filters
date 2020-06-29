@@ -151,8 +151,75 @@
     <ClCompile Include="[BOJ_13506]카멜레온 부분 문자열.cpp">
       <Filter>StringSearching</Filter>
     </ClCompile>
-    <ClCompile Include="[BOJ_13576]Prefix와 Suff4ix.cpp">
+    <ClCompile Include="[BOJ_13576]Prefix와 Suffix.cpp">
       <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_9202]Boggle.cpp">
+      <Filter>StringSearching</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_2098]외판원 순회.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="Kakao2020_4.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="Kakao2020_3.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="Kakao2020_5.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="Kakao2020_1.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="Kakao2020_2.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="line2020_1.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="line2020_2.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="line2020_3.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="line2020_6.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="line2020_4.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="line2020_5.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp" />
+    <ClCompile Include="소스1.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="소스2.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1937]욕심쟁이 판다.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15686]치킨 배달.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[SWEA_1767]프로세서 연결하기.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[SWEA_5653]줄기세포배양.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[SWEA_2383]점심 식사시간.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[SWEA_5656]벽돌 깨기.cpp">
+      <Filter>BrutetForce</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_19235] 모노미노도미노.cpp">
+      <Filter>BrutetForce</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +246,12 @@
     </Filter>
     <Filter Include="ReferenceCode">
       <UniqueIdentifier>{b2d39777-5219-4f9d-97b3-eedb41efabb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kakao">
+      <UniqueIdentifier>{a05e2870-f28e-451e-ad17-18c8203a244f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Line">
+      <UniqueIdentifier>{c16f3bf8-726f-4d4f-aa02-4c8070781ca8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
