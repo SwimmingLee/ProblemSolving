@@ -221,6 +221,12 @@
     <ClCompile Include="[BOJ_19235] 모노미노도미노.cpp">
       <Filter>BrutetForce</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_12764]싸지방에 간 준하.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_17863]공주님을 구해라!.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -252,6 +258,9 @@
     </Filter>
     <Filter Include="Line">
       <UniqueIdentifier>{c16f3bf8-726f-4d4f-aa02-4c8070781ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Etc">
+      <UniqueIdentifier>{f01f5ca7-1c3f-4586-b0b6-5ae8c916b34b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
