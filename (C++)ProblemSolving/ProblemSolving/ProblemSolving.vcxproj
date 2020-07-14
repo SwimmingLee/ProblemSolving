@@ -276,6 +276,7 @@
     <ClCompile Include="[BOJ_1764]듣보잡%28이진탐색%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="[BOJ_1766]문제집.cpp" />
     <ClCompile Include="[BOJ_17863]공주님을 구해라!.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

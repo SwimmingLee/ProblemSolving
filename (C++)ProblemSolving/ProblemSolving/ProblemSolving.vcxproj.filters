@@ -236,6 +236,9 @@
     <ClCompile Include="[BOJ_2903]중앙 이동 알고리즘.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_1766]문제집.cpp">
+      <Filter>위상정렬</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -270,6 +273,9 @@
     </Filter>
     <Filter Include="Etc">
       <UniqueIdentifier>{f01f5ca7-1c3f-4586-b0b6-5ae8c916b34b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="위상정렬">
+      <UniqueIdentifier>{6cc9b91f-9c51-4e9a-9d49-89bcfe598c8c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
