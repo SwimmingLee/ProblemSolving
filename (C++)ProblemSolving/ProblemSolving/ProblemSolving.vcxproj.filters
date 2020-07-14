@@ -239,6 +239,12 @@
     <ClCompile Include="[BOJ_1766]문제집.cpp">
       <Filter>위상정렬</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_11725]트리의 부모 찾기.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_11866]요세푸스 문제 0.cpp">
+      <Filter>DataInstuction</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

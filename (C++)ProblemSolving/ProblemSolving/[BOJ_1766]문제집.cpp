@@ -85,11 +85,11 @@ vector<int> inode;
 void solve() {
 	priority_queue<int> pq;
 	for (int i = 1; i <= n_problem; i++) {
-		if (inode[i] == 0) pq.push(i);
+		if (inode[i] == 0) pq.push(-i);
 	}
 
 	while (!pq.empty()) {
-		int cur = pq.top();
+		int cur =-pq.top();
 		cout << cur << ' ';
 		pq.pop();
 
@@ -97,7 +97,7 @@ void solve() {
 			int next = adj[cur][i];
 			inode[next]--;
 
-			if (inode[next] == 0) pq.push(next);
+			if (inode[next] == 0) pq.push(-next);
 		}
 	}
 }
@@ -111,7 +111,7 @@ int main(void) {
 		int a, b;
 		cin >> a >> b;
 		adj[a].push_back(b);
-		inode[a]++;
+		inode[b]++;
 	}
 	solve();
 	return 0;
