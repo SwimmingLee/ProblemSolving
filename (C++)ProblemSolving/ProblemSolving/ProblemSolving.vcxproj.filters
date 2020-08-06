@@ -245,6 +245,42 @@
     <ClCompile Include="[BOJ_11866]요세푸스 문제 0.cpp">
       <Filter>DataInstuction</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_1918]후위 표기식.cpp">
+      <Filter>DataInstuction</Filter>
+    </ClCompile>
+    <ClCompile Include="source.cpp">
+      <Filter>ReferenceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="sourc2.cpp">
+      <Filter>ReferenceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_18870]좌표 압축.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="source3.cpp">
+      <Filter>ReferenceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1166]선물.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15787]기차가 어둠을 헤치고 은하수를.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1920]수 찾기.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_2856]달팽이는 올라가고 싶다.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_17390]이건 꼭 풀어야 해.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_2805]나무 자르기.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1436]영화감독 숌.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -282,6 +318,9 @@
     </Filter>
     <Filter Include="위상정렬">
       <UniqueIdentifier>{6cc9b91f-9c51-4e9a-9d49-89bcfe598c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="이진탐색">
+      <UniqueIdentifier>{31f0b6c6-33a4-4130-a117-24a426339160}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
