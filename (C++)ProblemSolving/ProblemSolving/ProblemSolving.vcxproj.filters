@@ -278,8 +278,14 @@
     <ClCompile Include="[BOJ_2805]나무 자르기.cpp">
       <Filter>이진탐색</Filter>
     </ClCompile>
-    <ClCompile Include="[BOJ_1436]영화감독 숌.cpp">
+    <ClCompile Include="[BOJ_2457]공주님의 정원.cpp">
       <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_14627]파닭파닭.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_3020]개똥벌레.cpp">
+      <Filter>이진탐색</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
