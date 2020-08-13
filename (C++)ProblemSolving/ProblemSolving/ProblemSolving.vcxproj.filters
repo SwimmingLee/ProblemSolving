@@ -287,6 +287,12 @@
     <ClCompile Include="[BOJ_3020]개똥벌레.cpp">
       <Filter>이진탐색</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_1592]영식이와 친구들.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_7453]합이 0인 네 정수.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

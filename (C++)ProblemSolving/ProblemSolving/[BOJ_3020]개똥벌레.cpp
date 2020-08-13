@@ -56,7 +56,6 @@ int main(void) {
         // 직접 만든 upper_bound를 이용했을 때
         int u = N / 2 - bsearch(down_line, i-1) - 1;
         int v = N / 2 - bsearch(up_line, H-i) - 1;
-        cout << u << " " << v << endl;
         int sum = u + v;
         if (len == sum) {
             cnt++;
