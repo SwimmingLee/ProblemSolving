@@ -293,6 +293,9 @@
     <ClCompile Include="[BOJ_7453]합이 0인 네 정수.cpp">
       <Filter>이진탐색</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_2933]미네랄.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
