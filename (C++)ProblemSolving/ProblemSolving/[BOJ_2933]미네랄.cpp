@@ -87,7 +87,7 @@ void moveStick(int sh, int order) {
     if (sw == -1) return;
 
     board[sh][sw] = '.';
-    for (int d = 0; d < 3; d++) {
+    for (int d = 0; d < 4; d++) {
         queue<pair<int, int>> Q;
         queue<pair<int, int>> chkQ;
         initChk();
