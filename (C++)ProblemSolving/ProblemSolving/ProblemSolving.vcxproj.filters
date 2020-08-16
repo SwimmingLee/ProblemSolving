@@ -193,7 +193,6 @@
     <ClCompile Include="line2020_5.cpp">
       <Filter>Line</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp" />
     <ClCompile Include="소스1.cpp">
       <Filter>Kakao</Filter>
     </ClCompile>
@@ -248,17 +247,8 @@
     <ClCompile Include="[BOJ_1918]후위 표기식.cpp">
       <Filter>DataInstuction</Filter>
     </ClCompile>
-    <ClCompile Include="source.cpp">
-      <Filter>ReferenceCode</Filter>
-    </ClCompile>
-    <ClCompile Include="sourc2.cpp">
-      <Filter>ReferenceCode</Filter>
-    </ClCompile>
     <ClCompile Include="[BOJ_18870]좌표 압축.cpp">
       <Filter>이진탐색</Filter>
-    </ClCompile>
-    <ClCompile Include="source3.cpp">
-      <Filter>ReferenceCode</Filter>
     </ClCompile>
     <ClCompile Include="[BOJ_1166]선물.cpp">
       <Filter>Etc</Filter>

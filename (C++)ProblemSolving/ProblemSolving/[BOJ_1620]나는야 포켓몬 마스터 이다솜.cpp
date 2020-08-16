@@ -17,9 +17,11 @@ int bsearch(string& s) {
 	while (start <= end) {
 		mid = (start + end) / 2;
 
-		if (sorted_s[mid].first == s) return sorted_s[mid].second;
-
-		if (sorted_s[mid].first < s) {
+		int com_res = sorted_s[mid].first.compare(s);
+		if (com_res == 0) {
+			return sorted_s[mid].second;
+		}
+		else if (com_res < 0) {
 			start = mid + 1;
 		}
 		else {
@@ -47,10 +49,10 @@ int main(void) {
 			for (int j = 0; j < in.size(); j++) {
 				num = num * 10 + (in[j] - '0');
 			}
-			cout << s[num - 1] << endl;
+			cout << s[num - 1] << '\n';
 		}
 		else {
-			cout << bsearch(in) + 1 << endl;
+			cout << bsearch(in) + 1 << '\n';
 		}
 
 	}

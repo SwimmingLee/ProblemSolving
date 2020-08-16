@@ -167,9 +167,6 @@
     <ClCompile Include="line2020_6.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="sourc2.cpp" />
-    <ClCompile Include="source.cpp" />
-    <ClCompile Include="source3.cpp" />
     <ClCompile Include="[BOJ_10256]돌연변이.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -408,7 +405,6 @@
     <ClCompile Include="[SWEA_5656]벽돌 깨기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="소스.cpp" />
     <ClCompile Include="소스1.cpp" />
     <ClCompile Include="소스2.cpp" />
     <ClCompile Include="에라토스테네스의 체.cpp">
