@@ -289,6 +289,12 @@
     <ClCompile Include="[BOJ_1620]나는야 포켓몬 마스터 이다솜.cpp">
       <Filter>이진탐색</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_10815]숫자 카드.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_16953]AtoB.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
