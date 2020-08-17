@@ -295,6 +295,18 @@
     <ClCompile Include="[BOJ_16953]AtoB.cpp">
       <Filter>BFS</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_10816]숫자 카드2.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1072]게임.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1939]중량제한.cpp">
+      <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_2912]백설공주와 난쟁이.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

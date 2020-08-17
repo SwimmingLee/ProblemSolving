@@ -326,6 +326,9 @@
 
 ## Binary Search
 
+- [수 찾기](https://www.acmicpc.net/problem/1920)
+  - 이진 탐색을 이용해서 주어진 숫자가 배열에 존재하는 지 찾는 문제입니다. 파이썬을 이용하면 이분 탐색을 직접 짤 필요없이 set에 값이 존재하는지 판별할 수 있습니다. 
+
 - [수 이어 쓰기 2](https://www.acmicpc.net/problem/1790)
 
 - [랜선 자르기](https://www.acmicpc.net/problem/1654)
