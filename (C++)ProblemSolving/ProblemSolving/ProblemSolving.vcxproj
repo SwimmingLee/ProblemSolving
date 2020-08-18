@@ -358,7 +358,6 @@
     <ClCompile Include="[BOJ_2903]중앙 이동 알고리즘.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="[BOJ_2912]백설공주와 난쟁이.cpp" />
     <ClCompile Include="[BOJ_2933]미네랄.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
