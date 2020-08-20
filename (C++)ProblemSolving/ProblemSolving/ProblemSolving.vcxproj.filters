@@ -229,9 +229,6 @@
     <ClCompile Include="[BOJ_2641]다각형 그리기.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
-    <ClCompile Include="[BOJ_1516]게임 개발.cpp">
-      <Filter>Etc</Filter>
-    </ClCompile>
     <ClCompile Include="[BOJ_2903]중앙 이동 알고리즘.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
@@ -303,6 +300,18 @@
     </ClCompile>
     <ClCompile Include="[BOJ_1939]중량제한.cpp">
       <Filter>이진탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_2252]줄 세우기.cpp">
+      <Filter>위상정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1516]게임 개발.cpp">
+      <Filter>위상정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_2623]음악프로그램.cpp">
+      <Filter>위상정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1057]토너먼트.cpp">
+      <Filter>Etc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

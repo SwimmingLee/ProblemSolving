@@ -98,6 +98,11 @@
 
 ## Graph
 
+### 위상정렬
+
+- [문제집](https://www.acmicpc.net/problem/1766) :star:
+- 
+
 ### DFS 
 
 - [가르침](https://www.acmicpc.net/problem/1062) :star: :star: #다시 풀 것!
@@ -270,6 +275,7 @@
   - trie에서 자식노드 탐색을 맵으로 하다니;;;
 
 
+
 ## Dynamic Programming
 
 - [1로 만들기](https://www.acmicpc.net/problem/1463)
@@ -324,6 +330,8 @@
 - [플레이리스트](https://www.acmicpc.net/problem/12872)
 - [N-Rook II](https://www.acmicpc.net/problem/1767)
 
+
+
 ## Binary Search
 
 - [수 찾기](https://www.acmicpc.net/problem/1920)
@@ -353,6 +361,8 @@
 
 - [놀이 공원](https://www.acmicpc.net/problem/1561)
 - [메탈](https://www.acmicpc.net/problem/9460) :star::star:
+
+
 
 ## Math
 
@@ -409,6 +419,8 @@
 - [겹치는 선분](https://www.acmicpc.net/problem/1689)
 
 - [선 긋기](https://www.acmicpc.net/problem/2170)
+
+
 
 ## Etc
 
