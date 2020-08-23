@@ -313,6 +313,9 @@
     <ClCompile Include="[BOJ_1057]토너먼트.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_2056]작업.cpp">
+      <Filter>위상정렬</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

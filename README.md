@@ -101,7 +101,13 @@
 ### 위상정렬
 
 - [문제집](https://www.acmicpc.net/problem/1766) :star:
-- 
+
+- [문제집](https://www.acmicpc.net/problem/1766)
+- [작업](https://www.acmicpc.net/problem/2056)
+
+- 게임 개발 :star:
+  - 위상정렬의 기본적인 문제
+  - 시간을 고려하기 때문에 우선순위를 판별해 주는 것이 필요함 
 
 ### DFS 
 
