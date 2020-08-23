@@ -316,6 +316,9 @@
     <ClCompile Include="[BOJ_2056]작업.cpp">
       <Filter>위상정렬</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_1922]네트워크 연결.cpp">
+      <Filter>MST</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -356,6 +359,9 @@
     </Filter>
     <Filter Include="이진탐색">
       <UniqueIdentifier>{31f0b6c6-33a4-4130-a117-24a426339160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MST">
+      <UniqueIdentifier>{2e0c076f-f72e-4ade-bcea-f2aaa602ec7b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
