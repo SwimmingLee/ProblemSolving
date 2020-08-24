@@ -319,6 +319,9 @@
     <ClCompile Include="[BOJ_1922]네트워크 연결.cpp">
       <Filter>MST</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_2529]부등호.cpp">
+      <Filter>BackTracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
