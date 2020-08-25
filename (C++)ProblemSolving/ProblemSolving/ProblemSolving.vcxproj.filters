@@ -322,6 +322,12 @@
     <ClCompile Include="[BOJ_2529]부등호.cpp">
       <Filter>BackTracking</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_2870]수학숙제.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="기둥과 보.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

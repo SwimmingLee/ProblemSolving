@@ -371,6 +371,7 @@
     <ClCompile Include="[BOJ_2856]달팽이는 올라가고 싶다.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="[BOJ_2870]수학숙제.cpp" />
     <ClCompile Include="[BOJ_2903]중앙 이동 알고리즘.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -438,6 +439,7 @@
     <ClCompile Include="[SWEA_5656]벽돌 깨기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="기둥과 보.cpp" />
     <ClCompile Include="소스1.cpp" />
     <ClCompile Include="소스2.cpp" />
     <ClCompile Include="에라토스테네스의 체.cpp">
