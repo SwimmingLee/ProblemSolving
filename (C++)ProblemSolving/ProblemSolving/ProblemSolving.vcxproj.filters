@@ -328,6 +328,12 @@
     <ClCompile Include="기둥과 보.cpp">
       <Filter>Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="[CodeForces]String_Similarity.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="외벽 점검.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
