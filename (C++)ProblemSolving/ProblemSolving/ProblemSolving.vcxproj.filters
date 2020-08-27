@@ -334,6 +334,12 @@
     <ClCompile Include="외벽 점검.cpp">
       <Filter>Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="문자열 압축.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="경주로 건설.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
