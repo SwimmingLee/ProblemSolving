@@ -444,13 +444,17 @@
     <ClCompile Include="[SWEA_5656]벽돌 깨기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="가사 검색.cpp" />
     <ClCompile Include="경주로 건설.cpp" />
     <ClCompile Include="기둥과 보.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="동굴 탐험.cpp" />
     <ClCompile Include="문자열 압축.cpp" />
+    <ClCompile Include="보석 쇼핑.cpp" />
     <ClCompile Include="소스1.cpp" />
     <ClCompile Include="소스2.cpp" />
+    <ClCompile Include="수식 최대화.cpp" />
     <ClCompile Include="에라토스테네스의 체.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -470,6 +474,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="외벽 점검.cpp" />
+    <ClCompile Include="키패드 누르기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
