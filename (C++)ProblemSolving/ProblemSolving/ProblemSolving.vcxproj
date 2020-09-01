@@ -452,7 +452,7 @@
     <ClCompile Include="동굴 탐험.cpp" />
     <ClCompile Include="문자열 압축.cpp" />
     <ClCompile Include="보석 쇼핑.cpp" />
-    <ClCompile Include="소스1.cpp" />
+    <ClCompile Include="길 찾기 게임.cpp" />
     <ClCompile Include="후보키.cpp" />
     <ClCompile Include="수식 최대화.cpp" />
     <ClCompile Include="에라토스테네스의 체.cpp">

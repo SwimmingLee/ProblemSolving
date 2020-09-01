@@ -193,9 +193,6 @@
     <ClCompile Include="line2020_5.cpp">
       <Filter>Line</Filter>
     </ClCompile>
-    <ClCompile Include="소스1.cpp">
-      <Filter>Kakao</Filter>
-    </ClCompile>
     <ClCompile Include="[BOJ_1937]욕심쟁이 판다.cpp">
       <Filter>BFS</Filter>
     </ClCompile>
@@ -353,6 +350,9 @@
       <Filter>Kakao</Filter>
     </ClCompile>
     <ClCompile Include="후보키.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="길 찾기 게임.cpp">
       <Filter>Kakao</Filter>
     </ClCompile>
   </ItemGroup>
