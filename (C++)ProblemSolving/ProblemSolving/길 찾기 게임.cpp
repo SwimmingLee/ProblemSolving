@@ -8,14 +8,12 @@ using namespace std;
 struct Node {
 	int y, x, v;
 };
-
 struct Tree {
 	int value;
 	Tree* child[2];
 };	
-// 인덱스는 위에서부터 아래로 왼쪽에서 오른쪽으로 정렬한 노드의 번호
-Tree ntree[10001];
-vector<Node> nodes;
+
+
 bool cmp(const Node& u, const Node& v) {
 	if (u.y == v.y) return u.x < v.x;
 	else return u.v > v.y;
@@ -25,20 +23,20 @@ int findLeftChild(int start, int y, int x) {
 	int cy = -1, cx = -1;
 	int idx = -1;
 	for (int i = start; i < nodes.size(); i++) {
-		if (nodes[i].y < y && cy < nodes[i].y && nodes[i].x < x && nodes[i].x > cx) {
+		if (nodes[i].y < y && cy < nodes[i].y && nodes[i].x > x && nodes[i].x > cx) {
 			cy = nodes[i].y;
 			cx = nodes[i].x;
 			idx = i;
 		}
 	}
-
+	cout << "idx : " << idx << endl;
 	return idx;
 }
 int findRightChild(int start, int y, int x) {
 	int cy = -1, cx = 100001;
 	int idx = -1;
 	for (int i = start; i < nodes.size(); i++) {
-		if (nodes[i].y < y && cy < nodes[i].y && nodes[i].x > x && nodes[i].x < cx) {
+		if (nodes[i].y < y && cy < nodes[i].y && nodes[i].x < x && nodes[i].x < cx) {
 			cy = nodes[i].y;
 			cx = nodes[i].x;
 			idx = i;
@@ -48,31 +46,43 @@ int findRightChild(int start, int y, int x) {
 void preoder(Tree* v, vector<vector<int>>& ans) {
 	ans[0].push_back(v->value);
 	for (int i = 0; i < 2; i++) {
-		if (v->child[0] != NULL) {
-			preoder(v->child[0], ans);
+		if (v->child[i] != NULL) {
+			cout << "AA\n";
+			preoder(v->child[i], ans);
 		}
 	}
+	ans[1].push_back(v->value);
 }
-void 
+//void postorder(Tree* v, vector<vector<int>>& ans) {
+//}
+vector<Node> sorted_nodes;
+vector<vector<Node>> layered_nodes;
+// 인덱스는 위에서부터 아래로 왼쪽에서 오른쪽으로 정렬한 노드의 번호
+Tree ntree[10001];
+void attachChild(int depth, int sx, int ex) {
+	ntree[depth].child[0] = attachChild(depth + 1, );
+	ntree[depth].child[1] = attachChild(depth + 1, );
+}
 vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
-	vector<vector<int>> answer;
+	vector<vector<int>> answer(2);
 	for (int i = 0; i < nodeinfo.size(); i++) {
-		nodes.push_back({nodeinfo[i][1], nodeinfo[i][0], i });
+		sorted_nodes.push_back({nodeinfo[i][1], nodeinfo[i][0], i });
 	}
-	sort(nodes.begin(), nodes.end(), cmp);
-	int upper_idx, cur_sidx;
-	int layer = nodes[0].y;
-	for (int i = 0; i < nodes.size(); i++) {
-		Node parent = nodes[i];
-		ntree[i].value = parent.v;
-		int left_child = findLeftChild(i + 1, parent.y, parent.x);
-		int right_child = findRightChild(i + 1, parent.y, parent.x);
-		ntree[i].child[0] = ((left_child != -1) ? &ntree[left_child] : NULL);
-		ntree[i].child[1] = ((right_child != -1) ? &ntree[right_child] : NULL);
+	sort(sorted_nodes.begin(), sorted_nodes.end(), cmp);
+	
+	int layer = sorted_nodes[0].y;
+	vector<Node> nodes;
+	for (int i = 0; i < sorted_nodes.size(); i++) {
+		if (layer != sorted_nodes[i].y) {
+			layer = sorted_nodes[i].y;
+			layered_nodes.push_back(nodes);
+			nodes.clear();
+		}
+		nodes.push_back(sorted_nodes[i]);
 	}
 
-	preoder(0);
-	frexoder(0);
+	
+	attachChild(0, 0, 10000);
 
 	return answer;
 }
