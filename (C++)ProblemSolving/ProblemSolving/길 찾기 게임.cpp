@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <queue>
 #include <algorithm>
 #include <iostream>
 
@@ -7,6 +8,11 @@ using namespace std;
 
 struct Node {
 	int y, x, v;
+	Node* child[2];
+	Node(int y, int x, int v) : y(y), x(x), v(v) {
+		child[0] = NULL;
+		child[1] = NULL;
+	}
 };
 struct Tree {
 	int value;
@@ -19,30 +25,7 @@ bool cmp(const Node& u, const Node& v) {
 	else return u.v > v.y;
 }
 
-int findLeftChild(int start, int y, int x) {
-	int cy = -1, cx = -1;
-	int idx = -1;
-	for (int i = start; i < nodes.size(); i++) {
-		if (nodes[i].y < y && cy < nodes[i].y && nodes[i].x > x && nodes[i].x > cx) {
-			cy = nodes[i].y;
-			cx = nodes[i].x;
-			idx = i;
-		}
-	}
-	cout << "idx : " << idx << endl;
-	return idx;
-}
-int findRightChild(int start, int y, int x) {
-	int cy = -1, cx = 100001;
-	int idx = -1;
-	for (int i = start; i < nodes.size(); i++) {
-		if (nodes[i].y < y && cy < nodes[i].y && nodes[i].x < x && nodes[i].x < cx) {
-			cy = nodes[i].y;
-			cx = nodes[i].x;
-			idx = i;
-		}
-	}
-}
+
 void preoder(Tree* v, vector<vector<int>>& ans) {
 	ans[0].push_back(v->value);
 	for (int i = 0; i < 2; i++) {
@@ -59,14 +42,20 @@ vector<Node> sorted_nodes;
 vector<vector<Node>> layered_nodes;
 // 인덱스는 위에서부터 아래로 왼쪽에서 오른쪽으로 정렬한 노드의 번호
 Tree ntree[10001];
-void attachChild(int depth, int sx, int ex) {
-	ntree[depth].child[0] = attachChild(depth + 1, );
-	ntree[depth].child[1] = attachChild(depth + 1, );
+Node* attachChild(int depth, Node* u) {
+	if (depth == layered_nodes[depth].size()) {
+		return NULL;
+	}
+	
+	u->child[0] = attachChild(depth + 1, sx, u.x);
+	u->child[1] = attachChild(depth + 1, u.x, ex);
+
+	return ntree
 }
 vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
 	vector<vector<int>> answer(2);
 	for (int i = 0; i < nodeinfo.size(); i++) {
-		sorted_nodes.push_back({nodeinfo[i][1], nodeinfo[i][0], i });
+		sorted_nodes.push_back(Node(nodeinfo[i][1], nodeinfo[i][0], i ));
 	}
 	sort(sorted_nodes.begin(), sorted_nodes.end(), cmp);
 	
@@ -80,9 +69,9 @@ vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
 		}
 		nodes.push_back(sorted_nodes[i]);
 	}
-
-	
-	attachChild(0, 0, 10000);
+	int start_x = 0;
+	int end_x = 
+	attachChild(start_x, end_x, layer, node);
 
 	return answer;
 }
