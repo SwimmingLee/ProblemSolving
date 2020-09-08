@@ -451,6 +451,7 @@
     </ClCompile>
     <ClCompile Include="길 찾기 게임(2).cpp" />
     <ClCompile Include="동굴 탐험.cpp" />
+    <ClCompile Include="무지의 먹방 라이브.cpp" />
     <ClCompile Include="문자열 압축.cpp" />
     <ClCompile Include="보석 쇼핑.cpp" />
     <ClCompile Include="길 찾기 게임%281%29.cpp" />

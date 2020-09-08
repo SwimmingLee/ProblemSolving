@@ -27,6 +27,7 @@ void addNode(Node* parent, Node* child) {
 		else addNode(parent->right, child);
 	}
 }
+
 void order(Node* pnode, vector<vector<int>>& ans) {
 	ans[0].push_back(pnode->v);
 	if (pnode->left) order(pnode->left, ans);
