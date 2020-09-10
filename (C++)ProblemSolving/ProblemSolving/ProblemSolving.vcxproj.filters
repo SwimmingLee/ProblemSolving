@@ -364,6 +364,9 @@
     <ClCompile Include="자물쇠와 열쇠.cpp">
       <Filter>Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="블록 게임.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
