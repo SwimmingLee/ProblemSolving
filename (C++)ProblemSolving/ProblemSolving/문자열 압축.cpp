@@ -5,40 +5,29 @@ using namespace std;
 
 int solution(string s) {
 	int answer = s.size();
-	for (int i = 1; i <= s.size(); i++) {
-		string stand_s = s.substr(0, i);
-		string res_s;
+	for (int i = 1; i <= s.size() / 2; i++) {
+		string res_str = "";
+		string stand_str = s.substr(0, i);
 		int cnt = 1;
 		for (int j = i; ; j += i) {
-			if (j > s.size()) {
-				if (cnt != 1) {
-					res_s += to_string(cnt) + stand_s + s.substr(j-i);
+			string cmp_str;
+			if (j < s.size()) {
+				cmp_str = s.substr(j, i);
+				if (stand_str == cmp_str) {
+					cnt++;
+					continue;
 				}
-				else {
-					res_s += s.substr(j-i);
-				}
-				break;
 			}
-
-			string cmp_s = s.substr(j, i);
-			if (stand_s == cmp_s) {
-				cnt++;
+			if (cnt > 1) {
+				res_str += to_string(cnt);
+				cnt = 1;
 			}
-			else {
-				if (cnt != 1) {
-					res_s += to_string(cnt) + stand_s;
-					cnt = 1;
-				}
-				else {
-					res_s += stand_s;
-				}
-				stand_s = cmp_s;
-			}
-
-			
+			res_str += stand_str;
+			stand_str = cmp_str;
+			if (j >= s.size()) break;
 		}
-		//cout << "[ " << i  << "] " << res_s << endl;
-		int tmp = res_s.size();
+
+		int tmp = res_str.size();
 		if (tmp < answer) answer = tmp;
 	}
 	return answer;

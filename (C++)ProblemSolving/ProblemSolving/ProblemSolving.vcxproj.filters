@@ -367,6 +367,30 @@
     <ClCompile Include="블록 게임.cpp">
       <Filter>Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="실패율.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[Kakao2021]1.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[Kakao2021]2.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[Kakao2021]3.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[Kakao2021]4.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[Kakao2021]5.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[Kakao2021]6.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="[Kakao2021]7.cpp">
+      <Filter>Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

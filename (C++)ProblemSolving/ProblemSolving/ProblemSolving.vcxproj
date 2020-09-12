@@ -432,6 +432,13 @@
     <ClCompile Include="[CodeForces]String_Similarity.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="[Kakao2021]1.cpp" />
+    <ClCompile Include="[Kakao2021]2.cpp" />
+    <ClCompile Include="[Kakao2021]3.cpp" />
+    <ClCompile Include="[Kakao2021]4.cpp" />
+    <ClCompile Include="[Kakao2021]5.cpp" />
+    <ClCompile Include="[Kakao2021]6.cpp" />
+    <ClCompile Include="[Kakao2021]7.cpp" />
     <ClCompile Include="[SWEA_1767]프로세서 연결하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -456,6 +463,7 @@
     <ClCompile Include="보석 쇼핑.cpp" />
     <ClCompile Include="길 찾기 게임%281%29.cpp" />
     <ClCompile Include="블록 게임.cpp" />
+    <ClCompile Include="실패율.cpp" />
     <ClCompile Include="자물쇠와 열쇠.cpp" />
     <ClCompile Include="후보키.cpp" />
     <ClCompile Include="수식 최대화.cpp" />
