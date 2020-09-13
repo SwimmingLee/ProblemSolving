@@ -391,6 +391,24 @@
     <ClCompile Include="[Kakao2021]7.cpp">
       <Filter>Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="[Line2020]1.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="[Line2020]2.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="[Line2020]3.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="[Line2020]4.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="[Line2020]5.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="[Line2020]6.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
