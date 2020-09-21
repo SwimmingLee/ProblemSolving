@@ -409,6 +409,9 @@
     <ClCompile Include="[Line2020]6.cpp">
       <Filter>Line</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_2812]크게 만들기.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
