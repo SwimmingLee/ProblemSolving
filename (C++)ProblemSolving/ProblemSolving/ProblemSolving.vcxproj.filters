@@ -412,6 +412,9 @@
     <ClCompile Include="[BOJ_2812]크게 만들기.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_1197]최소 스패닝 트리.cpp">
+      <Filter>MST</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
