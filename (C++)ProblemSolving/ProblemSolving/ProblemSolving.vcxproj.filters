@@ -308,7 +308,7 @@
       <Filter>위상정렬</Filter>
     </ClCompile>
     <ClCompile Include="[BOJ_1922]네트워크 연결.cpp">
-      <Filter>MST</Filter>
+      <Filter>Graph</Filter>
     </ClCompile>
     <ClCompile Include="[BOJ_2529]부등호.cpp">
       <Filter>BackTracking</Filter>
@@ -413,7 +413,10 @@
       <Filter>Etc</Filter>
     </ClCompile>
     <ClCompile Include="[BOJ_1197]최소 스패닝 트리.cpp">
-      <Filter>MST</Filter>
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_11657]타임머신.cpp">
+      <Filter>Graph</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -456,7 +459,7 @@
     <Filter Include="이진탐색">
       <UniqueIdentifier>{31f0b6c6-33a4-4130-a117-24a426339160}</UniqueIdentifier>
     </Filter>
-    <Filter Include="MST">
+    <Filter Include="Graph">
       <UniqueIdentifier>{2e0c076f-f72e-4ade-bcea-f2aaa602ec7b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
