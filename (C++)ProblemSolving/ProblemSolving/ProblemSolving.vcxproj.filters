@@ -418,6 +418,18 @@
     <ClCompile Include="[BOJ_11657]타임머신.cpp">
       <Filter>Graph</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_5585]거스름돈.cpp">
+      <Filter>탐욕</Filter>
+    </ClCompile>
+    <ClCompile Include="문제1.cpp">
+      <Filter>네이버</Filter>
+    </ClCompile>
+    <ClCompile Include="문제2.cpp">
+      <Filter>네이버</Filter>
+    </ClCompile>
+    <ClCompile Include="문제3.cpp">
+      <Filter>네이버</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -461,6 +473,12 @@
     </Filter>
     <Filter Include="Graph">
       <UniqueIdentifier>{2e0c076f-f72e-4ade-bcea-f2aaa602ec7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="탐욕">
+      <UniqueIdentifier>{a91ab597-ef27-4ba2-b528-1b12ef55edb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="네이버">
+      <UniqueIdentifier>{5382c397-a2c9-4279-abb2-89dc57b8a20b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
