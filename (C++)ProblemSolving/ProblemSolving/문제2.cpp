@@ -73,6 +73,7 @@ vector<int> solution(vector<vector<int>> blocks) {
 	// blocks에 있는 것들을 내가 생각한 자료구로 옮기는 작업이 필요함
 	// blocks 를 block[idx] = 값 이렇게 만들어 놓고'
 	// 각 블럭끼리 자식 노드를 찾을 수 있따면 금방 해결할 수 있지 않을까 싶다. 
+	// 
 	init();
 	max_seq = depth[blocks.size()];
 	for (int i = 0; i < blocks.size(); i++) {
