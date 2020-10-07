@@ -121,7 +121,7 @@ def truck_work(office_board, truck_status, idx):
     if up == True and k < 5:
         command.append(6)
         n_bike += 1
-        k += 1pp
+        k += 1
     else:
         command.append(5)
         n_bike -= 1
