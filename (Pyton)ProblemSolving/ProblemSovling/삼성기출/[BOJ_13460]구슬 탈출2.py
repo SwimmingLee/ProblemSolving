@@ -23,24 +23,25 @@ def init():
 def fallingBaord(pos, dir, board):
     y, x = pos
     while True:
-        ny = pos[0] + dyx[dir][0]
-        nx = pos[1] + dyx[dir][1]
-
-        # 경계를 벋어난다
-        if ny < 0 or nx < 0 or ny >= N or nx >= M:
-            return False
+        ny = y + dyx[dir][0]
+        nx = x + dyx[dir][1]
 
        # print(board[pos[0]][pos[1]], board[ny][nx])
         #print(board[ny][nx], board[pos[0]][pos[1]])
         if board[ny][nx] == '.':
-            board[pos[0]][pos[1]], board[ny][nx] = board[ny][nx], board[pos[0]][pos[1]]
-            pos[0] = ny
-            pos[1] = nx
+            board[y][x], board[ny][nx] = board[ny][nx], board[y][x]
+            y = ny
+            x = nx
         elif board[ny][nx] == 'O':
-            board[pos[0]][pos[1]] = '.'
+            board[y][x] = '.'
+            pos[0], pos[1] = y, x
             return True
         else:
-            return True if y != pos[0] or x != pos[1] else False
+            if y == pos[0] and x == pos[1]:
+                return False
+            else:
+                pos[0], pos[1] = y, x
+                return True
 
 
 def dfs(depth, dir, board, red_pos, blue_pos):
@@ -54,25 +55,23 @@ def dfs(depth, dir, board, red_pos, blue_pos):
     # print()
     red_goal = fallingBaord(red_pos, dir, board)
     blue_goal = fallingBaord(blue_pos, dir, board)
-    if not red_goal:
-        red_goal = fallingBaord(red_pos, dir, board)
+    c = fallingBaord(red_pos, dir, board)
+    red_goal = True if red_goal or c else False
     # print(*board, sep='\n')
     if board[blue_pos[0]][blue_pos[1]] == '.':
         return
     elif board[red_pos[0]][red_pos[1]] == '.':
         if answer == -1 or answer > depth+1:
-            # print(answer)
             answer = depth+1
         return
     elif not red_goal and not blue_goal:
         return
 
     horizon = 0 if dir % 2 else 1
-    # print("HORIZON", horizon)
+
     # 다음 방향 지정해주기
     for next_dir in range(4):
         if next_dir % 2 == horizon:
-            # print("SDSD", next_dir)
             dfs(depth+1, next_dir, copy.deepcopy(board),
                 red_pos[:], blue_pos[:])
 
