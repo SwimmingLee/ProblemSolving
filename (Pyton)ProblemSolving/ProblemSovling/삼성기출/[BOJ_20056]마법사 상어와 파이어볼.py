@@ -8,7 +8,7 @@ fireballs = []
 collision_fireballs = []
 dyx = [[-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1], [-1, -1]]
 
-
+# 1부터 시작하는 모듈러
 for _ in range(M):
     fireball = list(map(int, input().split()))
     fireballs.append(fireball)
