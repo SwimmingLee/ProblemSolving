@@ -433,6 +433,15 @@
     <ClCompile Include="overflow_tset.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="Sk2.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="sk3.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_5212]지구 온난화.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
