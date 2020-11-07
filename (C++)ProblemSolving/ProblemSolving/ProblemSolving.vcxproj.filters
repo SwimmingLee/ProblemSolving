@@ -442,6 +442,9 @@
     <ClCompile Include="[BOJ_5212]지구 온난화.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_18352]특정 거리의 도시 찾기.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
