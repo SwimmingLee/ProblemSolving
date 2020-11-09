@@ -12,12 +12,16 @@ for _ in range(E):
     adj[u].append([v, w])
 
 costs = [987987987 for _ in range(V+1)]
+visited = [False for _ in range(V+1)]
 pq = []
 heapq.heappush(pq, [0, start_node])  # !
 costs[start_node] = 0
 
 while pq:
     prev_cost, cur_node = heapq.heappop(pq)
+    if visited[cur_node]:
+        continue
+    visited[cur_node] = True
     for edge in adj[cur_node]:
         next, cost = edge
         if costs[next] > prev_cost + cost:
