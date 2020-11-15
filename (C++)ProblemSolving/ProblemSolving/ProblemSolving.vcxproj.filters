@@ -445,6 +445,9 @@
     <ClCompile Include="[BOJ_18352]특정 거리의 도시 찾기.cpp">
       <Filter>BFS</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_2467]용액.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
