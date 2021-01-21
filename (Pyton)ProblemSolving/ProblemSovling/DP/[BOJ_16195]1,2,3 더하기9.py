@@ -1,3 +1,6 @@
+import sys
+
+sys.setrecursionlimit(1000000)
 mod = 1000000009
 MAX_N = 1001
 
