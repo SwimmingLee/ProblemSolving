@@ -6,13 +6,13 @@ cache = []
 
 def getDrug(full, half):
     global cache
-    if full < 0 or half < 0:
-        return 0
-
-    if full == 0 and half == 0:
-        return 1
-
     if cache[full][half] != -1:
+        return cache[full][half]
+
+    if full == 0:
+        return 1
+    if half == 0:
+        cache[full][half] = getDrug(full-1, half+1)
         return cache[full][half]
 
     cache[full][half] = getDrug(full-1, half+1) + getDrug(full, half-1)
