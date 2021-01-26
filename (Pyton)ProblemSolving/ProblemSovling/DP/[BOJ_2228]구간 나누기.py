@@ -14,14 +14,11 @@ for i in range(2, N+1):
 
 
 def solve(alpha, M):
-    if alpha > N:
-        if M == 0:
-            return 0
-        else:
-            return -inf
     if M == 0:
         return 0
-    # print("[Debug]", alpha, M)
+    if alpha > N:
+        return -inf
+
     if cache[alpha][M] != -inf:
         return cache[alpha][M]
 
