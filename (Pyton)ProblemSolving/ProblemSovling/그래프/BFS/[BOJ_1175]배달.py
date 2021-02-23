@@ -20,56 +20,42 @@ for h in range(N):
                 cpos2 = h * M + w
 
 
-def bfs(spos, cpos, start_value, dir):
-    dist = [[[0] * 4 for _ in range(M)] for _ in range(N)]
+def bfs(spos, cpos1, cpos2):
+    dist = [[[[0] * 4 for _ in range(4)] for _ in range(M)] for _ in range(N)]
+    state = 0
+    dir = -1
+
     q = collections.deque()
-    q.append([spos//M, spos % M, dir])
-    if dir != -1:
-        dist[spos//M][spos % M][dir] = start_value
+    q.append([spos//M, spos % M, dir, state])
 
-    res = []
     while q:
-        y, x, dir = q.popleft()
+        y, x, dir, state = q.popleft()
 
-        if y == cpos // M and x == cpos % M:
-            res.append([dist[y][x][dir], dir])
-            continue
+        if state == 3:
+            return dist[y][x][dir][state]
 
-        for i in range(4):
-            if dir == i:
+        for next_dir in range(4):
+            if dir == next_dir:
                 continue
 
-            ny = y + dy[i]
-            nx = x + dx[i]
+            ny = y + dy[next_dir]
+            nx = x + dx[next_dir]
             if ny < 0 or nx < 0 or ny >= N or nx >= M or board[ny][nx] == '#':
                 continue
 
-            if dir == -1:
-                dist[ny][nx][i] = 1
-                q.append([ny, nx, i])
-            elif dist[ny][nx][i] == 0:
-                dist[ny][nx][i] = dist[y][x][dir] + 1
-                q.append([ny, nx, i])
+            next_state = state
+            if ny == cpos1 // M and nx == cpos1 % M:
+                next_state |= 1
+            elif ny == cpos2 // M and nx == cpos2 % M:
+                next_state |= 2
 
-    return res
+            if dist[ny][nx][next_dir][next_state] == 0:
+                dist[ny][nx][next_dir][next_state] = dist[y][x][dir][state] + 1
+                q.append([ny, nx, next_dir, next_state])
+
+    return -1
 
 
-paths = bfs(spos, cpos1, 0, -1)
-for path in paths:
-    start_value, dir = path
-    # print(path)
-    candis = bfs(cpos1, cpos2, start_value, dir)
-    for candi in candis:
-        # print("", candi)
-        if answer == -1 or answer > candi[0]:
-            answer = candi[0]
-
-paths = bfs(spos, cpos2, 0, -1)
-for path in paths:
-    start_value, dir = path
-    candis = bfs(cpos2, cpos1, start_value, dir)
-    for candi in candis:
-        if answer == -1 or answer > candi[0]:
-            answer = candi[0]
+answer = bfs(spos, cpos1, cpos2)
 
 print(answer)
