@@ -1,69 +1,50 @@
+
+
 def solution(enter, leave):
-    answer = []
-    N = len(enter)
-    visited_person = [[] for _ in range(N+1)]
+    room = set()
+    visited = [[0] * (len(enter)+1) for _ in range(len(enter)+1)]
+    visited_map = [[True] * (len(enter)+1) for _ in range(len(enter)+1)]
+    answer = [-1] * len(enter)
+    # print(visited)
 
-    for i in range(1, N+1):
-        # i 사람보다 먼저 들어온 사람/ 늦게 들어온 사람 그룹 분할
-        first_enter, last_enter = [], []
-        enter_idx = 0
-        for j in range(N):
-            if i == enter[j]:
-                enter_idx = j
-                first_enter = enter[:j]
-                last_enter = enter[j+1:]
-                break
+    def solve(i, j):
+        if j == len(enter):
+            for i in range(1, len(enter)+1):
+                for j in range(1, len(enter)+1):
+                    visited_map[i][j] &= visited[i][j]
+            return
 
-        # i 사람보다 먼저 나간 사람 / 늦게 나간 살마 그룹 분할
-        first_leave, last_leave = [], []
-        leave_idx = 0
-        for j in range(N):
-            if i == leave[j]:
-                leave_idx = j
-                first_leave = leave[:j]
-                last_leave = leave[j+1:]
-                break
+        # print(i, j, room)
+        if leave[j] in room:
+            room.remove(leave[j])
+            solve(i, j+1)
+            room.add(leave[j])
 
-        cnt = 0
-        for u in last_leave:
-            if u in first_enter:
-                if not u in visited_person[i]:
-                    visited_person[i].append(u)
-                if not i in visited_person[u]:
-                    visited_person[u].append(i)
-                # u_enter = False
-                # for j in range(leave_idx+1, N):
-                #     if leave[j] in first_leave:
-                #         continue
-                #     if not leave[j] in visited_person[i]:
-                #             visited_person[i].append(leave[j])
-                #     if leave[j] == u:
-                #         break
+        if i != len(enter):
+            for man in room:
+                visited[man][enter[i]] += 1
+                visited[enter[i]][man] += 1
+            # print("시작 전", i, j, room)
+            room.add(enter[i])
+            solve(i+1, j)
+            room.remove(enter[i])
+            # print("시작 후", i, j, room)
+            for man in room:
+                visited[man][enter[i]] -= 1
+                visited[enter[i]][man] -= 1
+    solve(0, 0)
 
-                # if not i in visited_person[u]:
-                #     visited_person[u].append(i)
-
-        for u in last_enter:
-            if u in first_leave:
-                # if not u in visited_person[i]:
-                #     visited_person[i].append(u)
-
-                u_leave = False
-                for j in range(enter_idx+1, N):
-                    if not enter[j] in visited_person[i]:
-                        visited_person[i].append(enter[j])
-                    if not i in visited_person[enter[j]]:
-                        visited_person[enter[j]].append(i)
-                    if enter[j] == u:
-                        break
-                # if not i in visited_person[u]:
-                #     visited_person[u].append(i)
-
-    for i in range(1, N+1):
-        answer.append(len(visited_person[i]))
-
+    for i in range(1, len(enter)+1):
+        visited_num = 0
+        for j in range(1, len(enter)+1):
+            if visited_map[i][j] == 1:
+                visited_num += 1
+        answer[i-1] = visited_num
     return answer
 
 
-answer = solution([1, 3, 2], [1, 2, 3])
-print(answer)
+print(solution([1, 3, 2], [1, 2, 3]))
+print(solution([1, 4, 2, 3], [2, 1, 3, 4]))
+print(solution([3, 2, 1], [2, 1, 3]))
+print(solution([3, 2, 1], [1, 3, 2]))
+print(solution([1, 4, 2, 3], [2, 1, 4, 3]))
