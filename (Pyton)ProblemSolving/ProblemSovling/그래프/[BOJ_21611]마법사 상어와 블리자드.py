@@ -3,6 +3,7 @@ input = sys.stdin.readline
 
 dy = [0, 1, 0, -1]
 dx = [-1, 0, 1, 0]
+answer = 0
 
 
 def init(board, N):
@@ -23,7 +24,7 @@ def init(board, N):
     x = sx
     is_ok = True
     while is_ok:
-        for ji in range(2):
+        for i in range(2):
             for si in range(step):
                 y = y + dy[dir]
                 x = x + dx[dir]
@@ -50,6 +51,73 @@ def init(board, N):
     return [up, down, left, right], shark_list
 
 
+def explosion(shark_list):
+    global answer
+    can_explosion = True
+
+    while can_explosion:
+        if len(shark_list) == 0:
+            break
+
+        can_explosion = False
+        continuous_cnt = 1
+        offset = 0
+        prev = shark_list[0]
+        shark_list_sz = len(shark_list)
+        for i in range(1, shark_list_sz):
+            si = i - offset
+            cur = shark_list[si]  # 중요!!
+            if prev == shark_list[si]:
+                continuous_cnt += 1
+            else:
+                if continuous_cnt >= 4:
+                    shark_list = shark_list[:si -
+                                            continuous_cnt] + shark_list[si:]
+                    can_explosion = True
+                    offset += continuous_cnt
+                    answer += prev * continuous_cnt
+                continuous_cnt = 1
+            prev = cur
+
+        if continuous_cnt >= 4:
+            si = shark_list_sz - offset
+            shark_list = shark_list[:si-continuous_cnt]
+            can_explosion = True
+            answer += prev * continuous_cnt
+
+    return shark_list
+
+
+def changeMarble(shark_list):
+    changed_shark_list = [0] * (N*N - 1)
+
+    prev = shark_list[0]
+    continuous_cnt = 1
+    csi = 0
+    is_full = False
+    for i in range(1, len(shark_list)):
+        if prev == shark_list[i]:
+            continuous_cnt += 1
+        else:
+            changed_shark_list[csi] = continuous_cnt
+            changed_shark_list[csi+1] = prev
+            csi += 2
+
+            if csi >= len(changed_shark_list):
+                is_full = True
+                break
+
+            continuous_cnt = 1
+
+        prev = shark_list[i]
+
+    if not is_full and prev != 0:
+        changed_shark_list[csi] = continuous_cnt
+        changed_shark_list[csi+1] = prev
+
+    return changed_shark_list
+
+
 N, M = list(map(int, input().split()))
 board = [0] * N
 for i in range(N):
@@ -69,70 +137,11 @@ for i in range(M):
         offset += 1
 
     # 연속 4칸 폭발!
-    destroy_cnt = 1
-    while destroy_cnt != 0 and len(shark_list) != 0:
-        destroy_cnt = 0
-        prev = shark_list[0]
-        cnt = 1
-        offset = 0
-        shark_list_sz = len(shark_list)
-        max_sz = shark_list_sz  # 중요!!
-        for i in range(1, shark_list_sz):
-            si = i - offset
-            # if shark_list[si] == 0:
-            #     max_sz = i
-            #     break
-
-            cur = shark_list[si]  # 중요!!
-            if prev == shark_list[si]:
-                cnt += 1
-            else:
-                if cnt >= 4:
-                    shark_list = shark_list[:si-cnt] + shark_list[si:]
-                    destroy_cnt += 1
-                    offset += cnt
-                    answer += prev * cnt
-                cnt = 1
-            prev = cur
-
-        if cnt >= 4:
-            si = shark_list_sz - offset
-            shark_list = shark_list[:si-cnt]
-            destroy_cnt += 1
-            answer += prev * cnt
-
+    shark_list = explosion(shark_list)
     if len(shark_list) == 0:
         break
-
     # 구슬 변화
-    new_shark_list = [0] * (N*N - 1)
-    prev = shark_list[0]
-    cnt = 1
-    nsi = 0
-    is_full = False
-    for i in range(1, len(shark_list)):
-        # if shark_list[i] == 0:
-        #     break
-
-        if prev == shark_list[i]:
-            cnt += 1
-        else:
-            new_shark_list[nsi] = cnt
-            new_shark_list[nsi+1] = prev
-            nsi += 2
-            if nsi >= len(new_shark_list):
-                is_full = True
-                break
-            cnt = 1
-        prev = shark_list[i]
-    if not is_full and prev != 0:
-        new_shark_list[nsi] = cnt
-        new_shark_list[nsi+1] = prev
-
-    shark_list = new_shark_list
-
-    # print(shark_list)
-
+    shark_list = changeMarble(shark_list)
 print(answer)
 
 
