@@ -448,6 +448,15 @@
     <ClCompile Include="[BOJ_2467]용액.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="[JungOl]한줄 메모장1.cpp">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_15649]N과M1.cpp">
+      <Filter>DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_11969]불켜기cpp.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -497,6 +506,12 @@
     </Filter>
     <Filter Include="네이버">
       <UniqueIdentifier>{5382c397-a2c9-4279-abb2-89dc57b8a20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LinkedList">
+      <UniqueIdentifier>{849a6aaa-f20d-47fa-b701-6a569a08161d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DFS">
+      <UniqueIdentifier>{2a94dc0d-cfd0-4fb5-ad85-b066b95fd53f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
