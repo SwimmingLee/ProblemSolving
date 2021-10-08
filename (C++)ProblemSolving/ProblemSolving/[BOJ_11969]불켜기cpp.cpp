@@ -26,7 +26,6 @@ int solve() {
 	while (!q.empty()) {
 		int y = q.front().first;
 		int x = q.front().second;
-		//cout << "visited " << y << ", " << x << endl;
 		
 		q.pop();
 		for (auto& room_pos : room[y][x]) {

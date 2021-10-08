@@ -457,6 +457,117 @@
     <ClCompile Include="[BOJ_11969]불켜기cpp.cpp">
       <Filter>BFS</Filter>
     </ClCompile>
+    <ClCompile Include="2차원 회전 반전 이동.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="2차원맵초기화.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="BFS기초.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="DFS기초.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Search기초.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="기초SingleLinkedList.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="기초DoubleLinkedList.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="기초PartialSort.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="졸업학기.cpp" />
+    <ClCompile Include="크리스마스 인형.cpp" />
+    <ClCompile Include="[BOJ_7577]앱.cpp">
+      <Filter>DynamicProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="View.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="단순2진암호코드.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="암호코드 스캔.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1309]동물원.cpp">
+      <Filter>DynamicProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_1965]상자넣기.cpp">
+      <Filter>DynamicProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="마그네틱.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="소수완제품확률.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="최대상금.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="균형점.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="[M2]String.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="회문.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="GNS.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="달란트2.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="작업순서.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="공통조상.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="중위순회.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="사칙연산.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="연습장.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="암호문3.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="보급로.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="K번째 접미어.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 교집합.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="도서관 정리.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="문서편집.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="교실자리배치.cpp" />
+    <ClCompile Include="파일 다운로드.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="중고시장 앱.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="AI 로봇.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -512,6 +623,12 @@
     </Filter>
     <Filter Include="DFS">
       <UniqueIdentifier>{2a94dc0d-cfd0-4fb5-ad85-b066b95fd53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SaumSung">
+      <UniqueIdentifier>{72005872-eff9-454e-b5cd-52f3c14c7457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DynamicProgramming">
+      <UniqueIdentifier>{ed0ef2bb-d8ed-4969-ae01-cf6543180811}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
