@@ -568,6 +568,120 @@
     <ClCompile Include="AI 로봇.cpp">
       <Filter>SaumSung</Filter>
     </ClCompile>
+    <ClCompile Include="리스트 복사.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="[BOJ_17626]Four Squares.cpp">
+      <Filter>DynamicProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="별자리 검색.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Table Calculator2.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Social Media.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="메일 서버.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="프리랜서.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Largest Empty Square.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="타일링.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="All Pair Shortest Path.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="LCS.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="비밀.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="고속도로 건설2.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="간담회 참석.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Pole.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Poker.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Inversion Counting.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Convex.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Closet.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="두 번 이상 등장하는 문자열.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열의 거듭제곱.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="단어가 등장하는 횟수.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="선 맞춤.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="CRT.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="줄 세우기.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="파이의 합.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="그래도 수명이 절반이 되어서는.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="아나그램.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="최대 부분 배열.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="가장 짧은 길 전부 청소하기.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="평등주의.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="스트리밍 서버.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="롤러코스터.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="괄호.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="쪽지예약전송.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="IoT DB.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="조각 맞추기.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
