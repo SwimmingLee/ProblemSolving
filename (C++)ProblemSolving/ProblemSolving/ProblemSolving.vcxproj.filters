@@ -682,6 +682,9 @@
     <ClCompile Include="조각 맞추기.cpp">
       <Filter>SaumSung</Filter>
     </ClCompile>
+    <ClCompile Include="파일손상.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
