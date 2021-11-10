@@ -685,6 +685,9 @@
     <ClCompile Include="파일손상.cpp">
       <Filter>SaumSung</Filter>
     </ClCompile>
+    <ClCompile Include="놀이공원.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
