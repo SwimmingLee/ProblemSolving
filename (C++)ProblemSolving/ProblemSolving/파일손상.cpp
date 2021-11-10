@@ -230,8 +230,6 @@ int cmdInfect(int tID) {
 
 	addFile(target.vpID, fileSize - preFileSize, 0);
 
-
-	//cout << "[] " << fileSize << '\n';
 	return fileSize;
 }
 
