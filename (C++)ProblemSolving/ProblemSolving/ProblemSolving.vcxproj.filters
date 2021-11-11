@@ -688,6 +688,9 @@
     <ClCompile Include="놀이공원.cpp">
       <Filter>SaumSung</Filter>
     </ClCompile>
+    <ClCompile Include="앱평가.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
