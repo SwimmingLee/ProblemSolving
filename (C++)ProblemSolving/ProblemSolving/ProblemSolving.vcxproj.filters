@@ -691,6 +691,9 @@
     <ClCompile Include="앱평가.cpp">
       <Filter>SaumSung</Filter>
     </ClCompile>
+    <ClCompile Include="조직관리.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">

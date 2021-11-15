@@ -145,13 +145,13 @@ int main()
 using namespace std;
 
 typedef pair<int, int> pii;
-static const int MAXL = 16;
+//static const int MAXL = 16;
 const int MAXUSER = 10000;
 const int MAXAPP = 10000;
 
-struct RESULT {
-	char mApp[5][MAXL];
-};
+//struct RESULT {
+//	char mApp[5][MAXL];
+//};
 
 
 int appCnt;
@@ -238,36 +238,38 @@ struct Heap {
 	void update(int appIdx, int addRatingCnt, int addScore) {
 		register int cur = heapIdx[appIdx];
 		
-
 		arr[cur].ratingCnt += addRatingCnt;
 		arr[cur].totalScore += addScore;
 
-		while (cur != 0 && compare(arr[cur], arr[parent(cur)])) {
-			swap(arr[cur], arr[parent(cur)]);
-			swap(heapIdx[arr[cur].appIdx], heapIdx[arr[parent(cur)].appIdx]);
-			cur = parent(cur);
+		if (cur != 0 && compare(arr[cur], arr[parent(cur)])) {
+			while (cur != 0 && compare(arr[cur], arr[parent(cur)])) {
+				swap(arr[cur], arr[parent(cur)]);
+				swap(heapIdx[arr[cur].appIdx], heapIdx[arr[parent(cur)].appIdx]);
+				cur = parent(cur);
+			}
 		}
-		while (leftChild(cur) < appCnt) {
-			int child;
-			if (leftChild(cur) == appCnt - 1) {
-				child = leftChild(cur);
-			}
-			else if (compare(arr[leftChild(cur)], arr[rightChild(cur)])) {
-				child = leftChild(cur);
-			}
-			else {
-				child = rightChild(cur);
-			}
+		else {
+			while (leftChild(cur) < appCnt) {
+				int child;
+				if (leftChild(cur) == appCnt - 1) {
+					child = leftChild(cur);
+				}
+				else if (compare(arr[leftChild(cur)], arr[rightChild(cur)])) {
+					child = leftChild(cur);
+				}
+				else {
+					child = rightChild(cur);
+				}
 
-			if (compare(arr[cur], arr[child])) {
-				break;
-			}
+				if (compare(arr[cur], arr[child])) {
+					break;
+				}
 
-			swap(arr[cur], arr[child]);
-			swap(heapIdx[arr[cur].appIdx], heapIdx[arr[child].appIdx]);
-			cur = child;
+				swap(arr[cur], arr[child]);
+				swap(heapIdx[arr[cur].appIdx], heapIdx[arr[child].appIdx]);
+				cur = child;
+			}
 		}
-		
 	}
 };
 
