@@ -700,6 +700,9 @@
     <ClCompile Include="자전거 대여소.cpp">
       <Filter>SaumSung</Filter>
     </ClCompile>
+    <ClCompile Include="[BOJ_18119]단어암기.cpp">
+      <Filter>BitOperation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
@@ -761,6 +764,9 @@
     </Filter>
     <Filter Include="DynamicProgramming">
       <UniqueIdentifier>{ed0ef2bb-d8ed-4969-ae01-cf6543180811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BitOperation">
+      <UniqueIdentifier>{3add2d7c-6185-4fb7-8546-24619d8bce4c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
