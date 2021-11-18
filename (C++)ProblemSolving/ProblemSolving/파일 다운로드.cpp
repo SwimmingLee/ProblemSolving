@@ -25,6 +25,7 @@ int getHashID(const string& s) {
 	}
 	return hTable[s];
 }
+
 void init() {
 	hCnt = 0;
 	hTable.clear();
@@ -44,6 +45,7 @@ void makeDir(char path[], char dirname[]) {
 
 	been[c] = been[p] + 1;
 }
+
 void updateDist(int n) {
 	queue<int> q;
 	q.push(n);
