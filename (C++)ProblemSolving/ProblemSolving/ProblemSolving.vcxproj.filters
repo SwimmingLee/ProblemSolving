@@ -694,6 +694,12 @@
     <ClCompile Include="조직관리.cpp">
       <Filter>SaumSung</Filter>
     </ClCompile>
+    <ClCompile Include="파일 캐시.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
+    <ClCompile Include="자전거 대여소.cpp">
+      <Filter>SaumSung</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="StringSearching">
